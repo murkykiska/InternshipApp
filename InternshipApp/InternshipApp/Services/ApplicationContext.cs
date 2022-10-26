@@ -38,10 +38,6 @@ namespace InternshipApp
         }
         public async Task<IEnumerable<Employee>> GetItemsAsync(bool forceRefresh = false)
         {
-            foreach(var employee in Employees.Local)
-            {
-                Employees.Add(employee);
-            }
             var employees = await Employees.ToListAsync().ConfigureAwait(false);
             return employees;
         }
