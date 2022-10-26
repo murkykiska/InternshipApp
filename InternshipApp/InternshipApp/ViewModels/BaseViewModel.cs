@@ -11,7 +11,6 @@ namespace InternshipApp.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Employee> DataStore => App.ApplicationContext;
-        //public IDataStore<Employee> DataStore => DependencyService.Get<IDataStore<Employee>>();
 
         bool isBusy = false;
         public bool IsBusy

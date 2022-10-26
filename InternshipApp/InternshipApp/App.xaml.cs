@@ -16,7 +16,6 @@ namespace InternshipApp
 
             ApplicationContext = new ApplicationContext(dbPath);
 
-            //DependencyService.Register<ApplicationContext>();
             MainPage = new AppShell();
         }
 
